@@ -19,7 +19,7 @@ if &background == 'dark'
 	hi Character guifg=#f5e5ff
 	hi ModeMsg guifg=#e3b5db 
 	hi Directory guifg=#9eebfa 
-	hi Function guifg=#f37ce9
+	hi Function guifg=#9eebfa
 	hi Type guifg=#e3b5db
 	hi String guifg=#9eebfa
 	hi Keyword guifg=#e3b5db
@@ -48,14 +48,21 @@ if &background == 'dark'
 	hi Pmenu guifg=#f20df2
 	hi Question guifg=#0df2f2
 	hi QuickFixLine guibg=#f7f4b4
-	hi StatusLineTerm guibg=#80a0ff
-	hi StatusLineTermNC guibg=#80a0ff
 	hi Title guifg=#f20df2
+	hi StorageClass guifg=#9eebfa
 
-	hi DiffAdd guibg=#4f7f96 
+	hi DiffAdd guibg=#
 	hi DiffChange guibg=#8064ad 
 	hi DiffDelete guifg=#0df2f2 guibg=#4f7f96  
 	hi DiffText guibg=#ff007b 
+
+	hi VimGroup guifg=#9eebfa 
+
+	hi rustUnsafeKeyword guifg=#00122e guibg=#ff007b 
+	hi rustTrail guifg=#9eebfa 
+
+	hi StatusLineTerm guibg=#80a0ff
+	hi StatusLineTermNC guibg=#80a0ff
 endif
 
 	"let g:puple = '#d6a3ff'
