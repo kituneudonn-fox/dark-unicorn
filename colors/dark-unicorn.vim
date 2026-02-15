@@ -51,7 +51,7 @@ if &background == 'dark'
 	hi Title guifg=#f20df2
 	hi StorageClass guifg=#9eebfa
 
-	hi DiffAdd guibg=#
+	hi DiffAdd guibg=#4f7f96
 	hi DiffChange guibg=#8064ad 
 	hi DiffDelete guifg=#0df2f2 guibg=#4f7f96  
 	hi DiffText guibg=#ff007b 
