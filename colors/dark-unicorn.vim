@@ -23,7 +23,7 @@ if &background == 'dark'
 	hi Type guifg=#e3b5db
 	hi String guifg=#9eebfa
 	hi Keyword guifg=#e3b5db
-	hi Number guifg=#f7f4b4
+	hi Number guifg=#b8c8f9
 	hi Define guifg=#f7f4b4
 	hi Macro guifg=#f7f4b4
 	hi Statement guifg=#d6a3ff
@@ -58,7 +58,7 @@ if &background == 'dark'
 
 	hi VimGroup guifg=#9eebfa 
 
-	hi rustUnsafeKeyword guifg=#00122e guibg=#ff007b 
+	hi rustUnsafeKeyword gui=bold guifg=lightmagenta 
 	hi rustTrail guifg=#9eebfa 
 
 	hi StatusLineTerm guibg=#80a0ff
@@ -68,7 +68,7 @@ endif
 	"let g:puple = '#d6a3ff'
 	"let g:Dpink = '#887597'
 	"let g:pink = '#e3b5db'
-	"let g:lemon = "#f7f4b4"
+	"let g:lemon = '#f7f4b4'
 	"purple		#d6a3ff
 	"pink		#e3b5db
 	"lightblue		#9eebfa
