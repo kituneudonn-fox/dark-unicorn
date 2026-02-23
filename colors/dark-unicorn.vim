@@ -30,7 +30,7 @@ if &background == 'dark'
 	hi PreProc guifg=#f7f4b4
 	hi Special guifg=#f7f4b4
 	hi Identifier guifg=#9eebfa
-	hi Todo guibg=#f7f4b4
+	hi Todo guifg=#ffffff guibg=#636f69
 	hi Serch guibg=#f7f4b4
 	hi Constant guifg=#e3b5db
 
@@ -48,7 +48,7 @@ if &background == 'dark'
 	hi Pmenu guifg=#f20df2
 	hi Question guifg=#0df2f2
 	hi QuickFixLine guibg=#f7f4b4
-	hi Title guifg=#f20df2
+	hi Title guifg=#f7f7ba
 	hi StorageClass guifg=#9eebfa
 
 	hi DiffAdd guibg=#4f7f96
@@ -58,7 +58,7 @@ if &background == 'dark'
 
 	hi VimGroup guifg=#9eebfa 
 
-	hi rustUnsafeKeyword gui=bold guifg=lightmagenta 
+	hi rustUnsafeKeyword gui=bold guifg=#ffffff guibg=#663485  
 	hi rustTrail guifg=#9eebfa 
 
 	hi StatusLineTerm guibg=#80a0ff
