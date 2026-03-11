@@ -15,6 +15,8 @@ if &background == 'dark'
 	hi ErrorMsg guifg=#00122e guibg=#ff007b
 	hi DiffText guifg=#00122e guibg=#ff007b
 	hi WarningMsg guifg=#ff007b
+	hi! link airline_error_inactive ErrorMsg  
+	hi! link airline_error_inactive_bold ErrorMsg  
 
 	hi Character guifg=#f5e5ff
 	hi ModeMsg guifg=#e3b5db 
