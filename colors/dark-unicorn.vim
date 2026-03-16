@@ -6,12 +6,24 @@ if exists('syntax_on')
 endif
 let g:colors_name = 'dark-unicorn'
 
+let puple = [0,"#d6a3ff"]
+function! <SID>set_hi(name,fg,bg,style)
+	execute "hi " . a:name . " ctermfg=" . a:fg[0] . " ctermbg=" . a:bg[0] " cterm=" .  a:style
+	if a:fg[1] != ""
+	execute "hi " . a:name . " guifg=" . a:fg[1]
+endif
+	if a:bg[1] != ""
+	execute "hi " . a:name . " guifg=" . a:fg[1]
+endif
+execute "hi " . a:name . " gui=" . a:style
+endfun
+
 if &background == 'dark'
 	hi normal guifg=#f5e5ff guibg=#00122e
 	hi EndOfBuffer guibg=#00122e
 	hi Comment guifg=#736193
 
-	hi Error guibg=#ff007b
+	hi Error gui=bold guifg=#ffffff guibg=#663485  
 	hi ErrorMsg guifg=#00122e guibg=#ff007b
 	hi DiffText guifg=#00122e guibg=#ff007b
 	hi WarningMsg guifg=#ff007b
@@ -60,14 +72,13 @@ if &background == 'dark'
 
 	hi VimGroup guifg=#9eebfa 
 
-	hi rustUnsafeKeyword gui=bold guifg=#ffffff guibg=#663485  
+	hi! link rustUnsafeKeyword Error 
 	hi rustTrail guifg=#9eebfa 
 
 	hi StatusLineTerm guibg=#80a0ff
 	hi StatusLineTermNC guibg=#80a0ff
 endif
 
-	"let g:puple = '#d6a3ff'
 	"let g:Dpink = '#887597'
 	"let g:pink = '#e3b5db'
 	"let g:lemon = '#f7f4b4'
