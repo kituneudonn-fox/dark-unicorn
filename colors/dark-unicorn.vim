@@ -6,7 +6,15 @@ if exists('syntax_on')
 endif
 let g:colors_name = 'dark-unicorn'
 
-let puple = [0,"#d6a3ff"]
+let s:background = [0,"#00122e"]
+let s:white = [0,"#f5e5ff"]
+let s:puple = [0,"#d6a3ff"]
+let s:yellow = [0,"#f7f4b4"]
+let s:pink = [0,"#e3b5db"]
+let s:sky = [0,"#9eebfa"]
+let s:warn = [0,"#ff007b"]
+let s:darkpink = [0,"#663485"]
+let s:purewhite = [0,"#ffffff"]
 function! <SID>set_hi(name,fg,bg,style)
 	execute "hi " . a:name . " ctermfg=" . a:fg[0] . " ctermbg=" . a:bg[0] " cterm=" .  a:style
 	if a:fg[1] != ""
@@ -19,15 +27,17 @@ execute "hi " . a:name . " gui=" . a:style
 endfun
 
 if &background == 'dark'
-	hi normal guifg=#f5e5ff guibg=#00122e
+	call <SID>set_hi("Normal ",s:white,s;background,"NONE")
+	"hi normal guifg=#f5e5ff guibg=#00122e
 	hi EndOfBuffer guibg=#00122e
 	hi Comment guifg=#736193
 
-	hi Error gui=bold guifg=#ffffff guibg=#663485  
+	"hi Error gui=bold guifg=#ffffff guibg=#663485  
+	call <SID>set_hi("Error",s:purewhite,s;darkpink,"bold")
 	hi ErrorMsg guifg=#00122e guibg=#ff007b
-	hi DiffText guifg=#00122e guibg=#ff007b
 	hi WarningMsg guifg=#ff007b
 	hi! link airline_error_inactive ErrorMsg  
+	hi! link DiffText ErrorMsg  
 	hi! link airline_error_inactive_bold ErrorMsg  
 
 	hi Character guifg=#f5e5ff
@@ -80,9 +90,3 @@ if &background == 'dark'
 endif
 
 	"let g:Dpink = '#887597'
-	"let g:pink = '#e3b5db'
-	"let g:lemon = '#f7f4b4'
-	"purple		#d6a3ff
-	"pink		#e3b5db
-	"lightblue		#9eebfa
-	"lightyellow		#f7f4b4
